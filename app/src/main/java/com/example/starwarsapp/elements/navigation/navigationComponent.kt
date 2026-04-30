@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.starwarsapp.elements.screens.MainScreen
 
 
 @Composable
@@ -14,7 +15,7 @@ fun navigationComponent(){
     NavHost(navController= navController, startDestination = Screen.Main) {
 
         composable(Screen.Main.route) {
-            //Main screen
+            MainScreen(navController)
         }
 
         composable(Screen.Character.route)
