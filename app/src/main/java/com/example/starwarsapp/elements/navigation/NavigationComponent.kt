@@ -1,21 +1,19 @@
 package com.example.starwarsapp.elements.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.example.starwarsapp.elements.screens.MainScreen
 
 
 @Composable
-fun navigationComponent(){
-
-    val navController = rememberNavController()
+fun NavigationComponent(navController : NavHostController){
 
     NavHost(navController= navController, startDestination = Screen.Main) {
 
         composable(Screen.Main.route) {
-            MainScreen(navController)
+            MainScreen()
         }
 
         composable(Screen.Character.route)

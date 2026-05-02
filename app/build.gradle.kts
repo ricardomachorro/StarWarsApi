@@ -61,10 +61,11 @@ dependencies {
 
     var navigationComposeVersion = "2.9.8";
     var retrofitVersion = "2.9.0";
+    var viewModelVersion = "2.10.0"
 
     implementation("androidx.navigation:navigation-compose:$navigationComposeVersion")
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
-
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose-android:$viewModelVersion")
 
 }
